@@ -157,9 +157,9 @@ function startDynamicCountdown() {
         else{
             clearInterval(intervalId)
             livecont.style.display = "none"
-            expiredCont.style.display = "flex"
+            expiredCont.style.display = "none"
             queAnsCont.style.display = "none"
-            expiredCont.innerHTML = "Exam Finished!."
+            resultcont.style.display = "block"
             alert("Waiting for your result..")
             result()
         }
