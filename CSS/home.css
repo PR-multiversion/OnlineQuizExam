@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Prompt:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Prompt', sans-serif;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    position: relative;
+    height: 100dvh;
+    padding: 20px;
+    flex-direction: column;
+}
+.nav-cont{
+    justify-content: space-between;
+    height: 8vh;
+    border-radius: 10px;
+    background-color: rgb(162, 183, 202);
+    box-shadow: 1px 7px 5px 1px rgb(94, 91, 91);
+}
+.logo{
+    margin-left: 10px;
+    font-weight: bold;
+    color: rgb(10, 13, 109);
+}
+.navbar{
+    display: flex;
+    width: 30vh;
+    font-weight: bold;
+    color: rgb(0, 0, 254);
+    justify-content: space-evenly;
+}
+.create:hover{
+    cursor: pointer;
+}
+.content-cont{
+    
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin-top: 10px;
+    height: 85vh;
+    border-radius: 10px;
+    background-color: rgb(55, 55, 202);
+    box-shadow: 1px 7px 5px 1px rgb(94, 91, 91);
+}
+.question-cont{
+    height: 100%;
+    /* display: none; */
+}
+.top{
+    display: flex;
+    height: 20%;
+    width: 100%;
+}
+textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+.options{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 70%;
+}
+.opt-cont{
+    
+    width: 100%;
+    height: 20%;
+}
+.inp{
+    margin-left: 10px;
+    width: 90%;
+    height: 100%;
+    outline: none;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(243, 241, 241);
+}
+.bottom{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+select{
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    font-weight: bold;
+    color: rgb(10, 13, 109);
+}
+.bbtn{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    color: rgb(10, 13, 109);
+    font-weight: 500;
+    cursor: pointer;
+}
+.bbtn:hover{
+    background-color: rgb(225, 235, 246);
+}
+
+.total-question{
+    height: 100%;
+    gap: 15px;
+    overflow-y: scroll;
+    flex-direction: column;
+    display: none;
+}
+.total-question .questions{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.questions .question-view{
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(221, 235, 255);
+}
+.option-view{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.option-view div{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid lightgray;
+    background-color: white;
+}
+.option-view div:nth-child(even){
+    background-color: whitesmoke;
+}
+.opt{
+    text-align: center;
+}
+.opt, .opt-ans{
+    margin-left: 20px;
+}
+.answer-view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: rgba(41, 247, 75, 0.611);
+}
+
+.timing-cont{
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+.timing-cont .clock{
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+}
+.clock .time{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.clock input{
+    width: 100%;
+    height: 50%;
+    margin-left: 5px;
+}
+.clock .durationValue{
+    font-size: 20px;
+    margin-left: 8px;
+    width: 100%;
+    background-color: lavender;
+    padding: 10px;
+    color: rgb(10, 13, 109);
+    text-align: center;
+}
+.save-button{
+    border-radius: 15px;
+    padding: 15px;
+    cursor: pointer;
+    color: rgb(10, 13, 109);
+    font-weight: 500;
+    background-color: rgb(194, 202, 246);
+}
+.save-button:hover{
+    background-color: rgb(194, 199, 226);
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 254);
+}
+.OptionName{
+    color: rgb(199, 217, 234);
+    font-weight: 600;
+}
+#leftarrow{
+    position: absolute;
+    left: 2.5rem;
+    top: 7.5rem;
+    border-radius: 5px;
+    color: rgb(30, 4, 177);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+#leftarrow:hover{
+    background-color: aliceblue;
+}
+.infocont{
+    padding: 5px;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    left: 5rem;
+    bottom: 10rem;
+    font-size: 17px;
+    font-weight: 500;
+    overflow-y: scroll;
+    border-radius: 5px;
+    color: rgb(10, 13, 109);
+    background-color: rgb(158, 200, 235);
+    display: none;
+}
+.infocont::-webkit-scrollbar{
+    display: none;
+}
+#info{
+    color: white;
+    cursor: pointer;
+}
+#info:hover + .infocont{
+    display: flex;
+}
+.questionbtn{
+    cursor: pointer;
+}
+@media screen and (max-width: 650px){
+    .timing-cont .clock{
+        width: 100%;
+        height: 30%;
+    }
+    .infocont{
+        width: 50%;
+    }
+    .content-cont{
+        padding: 10px;
+    }
+}

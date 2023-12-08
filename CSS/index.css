@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Prompt:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Prompt', sans-serif;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container .login-cont{
+    height: 30vh;
+    width: 40vh;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 1px 2px 19px 2px rgb(94, 91, 91);
+}
+.login-cont .buttons{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    color: rgb(10, 13, 109);
+    font-weight: 500;
+    background-color: aliceblue;
+}
+.topbtn{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.generate-button{
+    background-color: rgb(162, 183, 202);
+}
+.gen-cont{
+    height: 100%;
+    flex-direction: column;
+    background-color: blue;
+    gap: 10px;
+}
+.gen-cont .generate{
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    padding: 7px;
+    color: rgb(10, 13, 109);
+    font-weight: 500;
+    cursor: pointer;
+}
+.gen-cont .link-cont{
+    display: flex;
+    width: 80%;
+    display: none;
+}
+.random{
+    padding: 10px;
+    border-right: 1px solid blue;
+    background-color: whitesmoke;
+}
+.link-cont .go-button{
+    width: 25%;
+    background-color: white;
+    border-radius: 0px 5px 5px 0px;
+    padding: 10px;
+    cursor: pointer;
+}
+.join-cont{
+    flex-direction: column;
+    height: 100%;
+    gap: 20px;
+    background-color: blue;
+    display: none;
+}
+input{
+    padding: 10px;
+    outline: none;
+}
+.j-btn{
+    padding: 10px;
+    color: rgb(10, 13, 109);
+    font-weight: 500;
+}

@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Prompt:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+   font-family: 'Prompt', sans-serif;
+}
+body{
+    padding: 20px;
+    height: 100vh;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    box-shadow: 2px 6px 13px 2px rgb(94, 91, 91);
+}
+.container .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    color: rgb(10, 13, 109);
+    background-color: rgb(162, 183, 202);
+}
+.container .exam-cont{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 40px);
+    background-color: rgb(75, 75, 247);
+}
+.exam-cont .exam-nav{
+    padding: 20px;
+    height: 5%;
+    justify-content: space-between;
+}
+.exam-cont .qn-ans-cont{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    height: 95%;
+    display: none;
+}
+.exam-cont .expired{
+    padding: 20px;
+    height: 95%;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    display: none;
+}
+.qn-ans-cont .question{
+    height: 25%;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.94);
+}
+.qn-ans-cont .options{
+    display: flex;
+    flex-direction: column;
+    max-height: 70%;
+    gap: 30px;
+    padding: 5px;
+    overflow-y: scroll;
+}
+.options .option{
+    display: flex;
+}
+.option .answer{
+    max-height: 100%; 
+    overflow-y: auto;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+.option input{
+    background-color: rgb(204, 215, 227);
+    margin-left: 10px;
+}
+.footer{
+    height:5%;
+}
+.savebutton{
+    background-color: rgb(204, 215, 227);
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(10, 13, 109);
+    cursor: pointer;
+}
+.timeleft{
+    font-weight: bold;
+    color: white;
+}
+.livecont{
+    height: 100%;
+    display: none;
+}
+.livecont .circle{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: red;
+}
+.live{
+    color: whitesmoke;
+    font-weight: 500;
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 95%;
+    gap: 10px;
+    background-color: aliceblue;
+    overflow-y: scroll;
+    display: none;
+}
+.result .qCont{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.qCont .ques{
+    width: 100%;
+    overflow-y: scroll;
+}
+.qCont .correctans{
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(11, 204, 11, 0.511);
+}
+.qCont .wrongans{
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(231, 7, 7, 0.642);
+}
+.nav .infocont{
+    z-index: 4;
+    padding: 5px;
+    position: absolute;
+    width: 30%;
+    height: 10%;
+    right: 2rem;
+    top: 7rem;
+    font-size: 17px;
+    font-weight: 500;
+    overflow-y: scroll;
+    border-radius: 5px;
+    color: rgb(10, 13, 109);
+    background-color: whitesmoke;
+    display: none;
+}
+.infocont::-webkit-scrollbar{
+    display: none;
+}
+#info{
+    color: rgb(10, 13, 109);
+    cursor: pointer;
+}
+#info:hover + .infocont{
+    display: flex;
+}
+@media screen and (max-width: 650px){
+    .nav .infocont{
+        width: 50%;
+        height: 20%;
+    }
+}
