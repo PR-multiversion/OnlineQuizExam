@@ -31,7 +31,7 @@ generate.addEventListener("click", ()=>{
 
 
 gobutton.addEventListener("click",()=>{   
-    window.location.href = '/HTML/home.html'
+    window.location.href = '/OnlineQuizExam/HTML/home.html'
 })
 
 joinBtn.addEventListener("click",()=>{
@@ -94,7 +94,7 @@ get(ref(db,`${Uid}`))
     console.error(err);
 });
     function nextPage(){
-        window.location.href = 'OnlineQuizExam/HTML/Exam.html'
+        window.location.href = '/OnlineQuizExam/HTML/Exam.html'
     }
     setTimeout(nextPage,2000) 
 })
