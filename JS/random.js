@@ -23,25 +23,6 @@ generate.addEventListener("click", ()=>{
 
     let UUID = Math.floor(Math.random() *1000000)
     let randomID = UUID;
-    /* let specialChar = "!*&%$?|+-/~"
-    let i =0, j=0;
-
-    randomID+=UUID
-    randomID+= specialChar.charAt(Math.floor(Math.random()*10))
-    while(i<3){
-        let number = Math.floor(Math.random()*26)
-        let letter = String.fromCharCode(number+65)
-        i++
-        randomID+= letter
-    }
-    randomID+= specialChar.charAt(Math.floor(Math.random()*10))
-    while(j<3){
-        let number = Math.floor(Math.random()*26)
-        let letter = String.fromCharCode(number+97)
-        j++
-        randomID+= letter
-    }
-    randomID+= specialChar.charAt(Math.floor(Math.random()*10)) */
     randomdiv.innerHTML = randomID
 
     console.log(randomID)
@@ -113,7 +94,7 @@ get(ref(db,`${Uid}`))
     console.error(err);
 });
     function nextPage(){
-        window.location.href = '/HTML/Exam.html'
+        window.location.href = 'OnlineQuizExam/HTML/Exam.html'
     }
     setTimeout(nextPage,2000) 
 })
