@@ -94,3 +94,14 @@ input{
     color: rgb(10, 13, 109);
     font-weight: 500;
 }
+@media screen and (max-width: 700px) {
+    .login-cont .buttons{
+        font-size: 23px;
+    }
+    .generate{
+        font-size: 20px;
+    }
+    .go-button, .random{
+        font-size: 21px;
+    }
+}
